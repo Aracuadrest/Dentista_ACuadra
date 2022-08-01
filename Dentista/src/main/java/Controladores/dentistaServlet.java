@@ -54,17 +54,17 @@ public class dentistaServlet extends HttpServlet {
 				+ "    <meta charset=\"UTF-8\">\r\n"
 				+ "    <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">\r\n"
 				+ "    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n"
-				+ "    <title>Document</title>\r\n"
+				+ "    <title>Cita</title>\r\n"
 				+ "</head>\r\n"
 				+ "<body>");
-		out.println("<h1> Resumen Cita dentista </h1>");
+		out.println("<h1> Resumen de la cita </h1>");
 		out.println("<ul>");
 		out.println("<li> Dia de la cita: "+diaCita+"</li>");
 		out.println("<li> Hora de la cita: "+hora+"</li>");
 		out.println("<li> Nombre: "+nombre+"</li>");
 		out.println("<li> Apellidos: "+apellidos+"</li>");
-		out.println("<li> Centro: "+centro+"</li>");
-		out.println("<li> Tipo: "+tipo+"</li>");
+		out.println("<li> Centro Elegido: "+centro+"</li>");
+		out.println("<li> Tipo de cita: "+tipo+"</li>");
 		out.println("</ul>");
 		
 		out.println("</body>\r\n"
