@@ -27,8 +27,7 @@ public class dentistaServlet extends HttpServlet {
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		// TODO Auto-generated method stub
-		response.getWriter().append("Served at: ").append(request.getContextPath());
+		response.sendRedirect("formulario.html");
 	}
 
 	/**
@@ -37,15 +36,14 @@ public class dentistaServlet extends HttpServlet {
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		
 		PrintWriter out = response.getWriter();
-		
-		
-		
+				
 		String diaCita =request.getParameter("diaCita");
 		String hora=request.getParameter("hora");
 		String nombre=request.getParameter("nombre");
 		String apellidos=request.getParameter("apellidos");
 		String centro=request.getParameter("centro");
 		String tipo=request.getParameter("tipo");
+		
 		
 		
 		out.println("<!DOCTYPE html>\r\n"
